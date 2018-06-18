@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_back"
+    tools:context=".quiz_contest.MenuPage" >
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/highScore"
+        android:layout_alignRight="@+id/highScore"
+        android:background="@drawable/button_click"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/highScore"
+        android:layout_marginTop="37dp"
+        android:onClick="exit"
+        android:text="Exit" />
+
+    <Button
+        android:id="@+id/highScore"
+        android:background="@drawable/button_click"
+        android:textColor="@android:color/white"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text=" High Score"
+         />
+
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="200dp"
+        android:background="@drawable/button_click"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="Start Game"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="74dp"
+        android:text="Welcome"
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/startGame"
+        android:layout_alignStart="@+id/startGame"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+</RelativeLayout>
